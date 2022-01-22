@@ -17,7 +17,7 @@ public class UsuarioDAO {
         em.persist(novoUsuario);
     }
 
-    public List<Usuario> listar() {
+    public List listar() {
         return em.createQuery("FROM Usuario").getResultList();
     }
 }
